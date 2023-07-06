@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body {
+    background-color: white;
+
+}
+.div-titulo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-titulo h1 {
+    font-weight: 300;
+}
+
+.contenedor{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Estilos del formulario*/
+
+.contenedor .div-formulario {
+    width: 90%;
+    height: 300px;
+    margin: 15px 15px;
+    background: rgb(0,4,153);
+    background: linear-gradient(90deg, rgba(0,4,153,1) 0%, rgba(0,47,230,1) 64%, rgba(0,232,255,1) 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.contenedor .div-formulario h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+
+}
+
+.contenedor .div-formulario form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor .div-formulario form input,
+.contenedor .div-formulario form button {
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 25px;
+}
+
+/* ESTILOS LISTADO */
+
+.contenedor .div-listado {
+    width: 90%;
+    height: calc(100% - 50px);
+    margin: 15px 15px;
+    background: rgb(0,4,153);
+    background: linear-gradient(90deg, rgba(0,4,153,1) 0%, rgba(0,47,230,1) 64%, rgba(0,232,255,1) 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.contenedor .div-listado h2 {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.contenedor .div-listado .div-usuario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    padding: 0 30px;
+}
+
+.contenedor .div-listado .div-usuario  p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ddd;
+
+}
+
+hr {
+    width: 100;
+    height: 1px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    margin:  0 5px;
+    color: white;
+    border-radius: 50px;
+
+}
+
+.btn-editar {
+    background-color: green;
+
+}
+
+.btn-eliminar {
+    background-color: red;
+
+}
+
+.contenedor .div-listado .div-empleados p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    .contenedor{
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: inline;
+        justify-content: center;
+    
+    }
+}
